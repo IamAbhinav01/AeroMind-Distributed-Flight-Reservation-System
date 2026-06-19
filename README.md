@@ -15,7 +15,7 @@ AeroMind is a production-grade, microservices-based flight reservation platform.
 
 ## 🏗 High-Level Architecture
 
-\_
+**![Aeromind.png](Aeromind.png)**
 
 **Overview:**
 The system uses an **API Gateway** pattern. Clients communicate exclusively with the Gateway, which handles authentication (JWT) and Rate Limiting. Valid requests are reverse-proxied to the **Flights Service** (for search/filtering) or the
