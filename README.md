@@ -5,11 +5,11 @@ AeroMind is a production-grade, microservices-based flight reservation platform.
 > **⚠️ Multi-Repository Architecture**
 > AeroMind is not a monolith. It is split into distinct microservices, each housed in its own repository:
 >
-> - [🔀 API Gateway](https://github.com/IamAbhinav01/AeroMind_API_GATEWAY_Service.git)
-> - [✈️ Flights Service](https://github.com/IamAbhinav01/AeroMind_Flight_Service.git)
-> - [🎟️ Booking Service](https://github.com/IamAbhinav01/AeroMind_Booking_Service.git)
-> - [📧 Notification Service](https://github.com/IamAbhinav01/AeroMind_Notification_Service.git)
-> - [💻 Frontend UI](https://github.com/IamAbhinav01/AeroMind_FrontEnd_Service.git)
+> - [🔀 API Gateway - https://github.com/IamAbhinav01/AeroMind_API_GATEWAY_Service.git](https://github.com/IamAbhinav01/AeroMind_API_GATEWAY_Service.git)
+> - [✈️ Flights Service - https://github.com/IamAbhinav01/AeroMind_Flight_Service.git](https://github.com/IamAbhinav01/AeroMind_Flight_Service.git)
+> - [🎟️ Booking Service - https://github.com/IamAbhinav01/AeroMind_Booking_Service.git](https://github.com/IamAbhinav01/AeroMind_Booking_Service.git)
+> - [📧 Notification Service - https://github.com/IamAbhinav01/AeroMind_Notification_Service.git](https://github.com/IamAbhinav01/AeroMind_Notification_Service.git)
+> - [💻 Frontend UI - https://github.com/IamAbhinav01/AeroMind_FrontEnd_Service.git](https://github.com/IamAbhinav01/AeroMind_FrontEnd_Service.git)
 
 ---
 
