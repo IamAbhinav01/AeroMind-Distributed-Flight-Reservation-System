@@ -9,6 +9,7 @@ AeroMind is a production-grade, microservices-based flight reservation platform.
 > - [✈️ Flights Service - https://github.com/IamAbhinav01/AeroMind_Flight_Service.git](https://github.com/IamAbhinav01/AeroMind_Flight_Service.git)
 > - [🎟️ Booking Service - https://github.com/IamAbhinav01/AeroMind_Booking_Service.git](https://github.com/IamAbhinav01/AeroMind_Booking_Service.git)
 > - [📧 Notification Service - https://github.com/IamAbhinav01/AeroMind_Notification_Service.git](https://github.com/IamAbhinav01/AeroMind_Notification_Service.git)
+> - [🧠 AI Semantic Search Service (Python/FastAPI)](#)
 > - [💻 Frontend UI - https://github.com/IamAbhinav01/AeroMind_FrontEnd_Service.git](https://github.com/IamAbhinav01/AeroMind_FrontEnd_Service.git)
 
 ---
@@ -60,11 +61,20 @@ This project was built to solve specific, real-world problems found in distribut
 **The Problem:** Handling CORS, JWT validation, and routing independently in every microservice creates massive code duplication and security risks.
 **The Solution:** The API Gateway acts as a reverse proxy (via `http-proxy-middleware`). It authenticates incoming JWTs centrally. If valid, it attaches user context and proxies the request to the hidden downstream services on different ports.
 
+### 6. AI-Powered Semantic Search
+
+**The Problem:** Traditional flight search relies on rigid, multi-field forms (origin, destination, dates, max price) which can be cumbersome on mobile or for users with complex requests.
+**The Solution:** Integrated a dedicated Python microservice leveraging the Google Gemini API.
+- Users can type natural language queries (e.g., "Find me a cheap flight to Mumbai next weekend under ₹5000").
+- The Gateway proxies this to the AI Service (FastAPI), which parses the string and extracts structured JSON parameters (destination codes, price limits, etc.).
+- The frontend maps these parameters to the standard Flights search API, delivering an intuitive, conversational booking experience.
+
 ---
 
 ## 💻 Tech Stack Highlights
 
 - **Backend Runtime:** Node.js, Express.js
+- **AI Microservice:** Python, FastAPI, Google Gemini SDK
 - **Databases:** MySQL (Data), Redis (Caching/Rate Limiting)
 - **ORM:** Sequelize
 - **Message Broker:** RabbitMQ (`amqplib`)
